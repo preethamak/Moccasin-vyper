@@ -10,17 +10,34 @@ is_zksync = false
 url = "http://127.0.0.1:8545"
 prompt_live = false  #To ask everytime weather you want to deploy and spend money
 save_to_db = false
-#default_account_name = "anvil1"
+default_account_name = "anv1"
 chain_id = 31337
 
 [networks.sepolia]
 url = "https://ethereum-sepolia-rpc.publicnode.com"
 chain_id = 11155111
+prompt_live = true
+save_to_db = false
+default_account_name = "default"
+explorer_uri = "https://eth-sepolia.blockscout.com/"    #run: mox explorer list
+explorer_type = "blockscout"     #The explorer uri and explorer type help explore and verify smart contract on blockscout.
 
 [networks.zksync-sepolia]
 url = "https://sepolia.era.zksync.dev"
 chain_id = 300
-is_zksync = true
+is_zksync = true   #only difference for evm chain and zksync chain
 prompt_live = true
+save_to_db = false
+default_account_name = "default"
+explorer_uri = "https://explorer.sepolia.era.zksync.dev"
+explorer_type = "zksyncexplorer"
 
+[networks.AKs-Network]
+url = "https://virtual.mainnet.eu.rpc.tenderly.co/67077c79-a138-45c6-84ac-1230f635c508"
+chain_id = 123123
+prompt_live = true
+save_to_db = false
+default_account_name = "ak"
+
+#b8660b1bd11a9d2d6837ecc4a3ae296dc0bd193b3e2c13fc950ca8cb12f96f01
 # You can view all configuration options at https://cyfrin.github.io/moccasin/all_moccasin_toml_parameters.html
