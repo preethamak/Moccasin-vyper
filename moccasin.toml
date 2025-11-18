@@ -39,5 +39,5 @@ prompt_live = true
 save_to_db = false
 default_account_name = "ak"
 
-#b8660b1bd11a9d2d6837ecc4a3ae296dc0bd193b3e2c13fc950ca8cb12f96f01
+
 # You can view all configuration options at https://cyfrin.github.io/moccasin/all_moccasin_toml_parameters.html
